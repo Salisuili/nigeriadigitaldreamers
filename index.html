@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empowering Nigeria's Digital Future</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .hero {
+        position: relative;
+        background: url("hero.jpg") center center/cover no-repeat;
+        height: 100vh;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+      }
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+      }
+      .hero-content h1 {
+        background: rgba(0, 0, 0, 0.7);
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+      .nav-custom {
+        background: rgba(255, 255, 255, 0.9);
+      }
+      .services-card {
+        text-align: center;
+        border: none;
+        background: #f8f9fa;
+      }
+      .services-card .card-body {
+        padding: 2rem;
+      }
+      .services-card i {
+        font-size: 3rem;
+        color: #198754;
+      }
+      .services-card:hover {
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+      }
+      .team-card img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg nav-custom fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="logo.jpg" alt="Logo" width="50" />
+          <span class="ms-2">Your Company Name</span><br />
+          <small>Code, Create, Conquer</small>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects and Impact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Meet Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="hero-content">
+        <h1>Empowering Nigeria's Digital Future</h1>
+        <p>Driving innovation and technology for a brighter tomorrow.</p>
+        <div class="mt-3">
+          <a href="#about" class="btn btn-success me-2">Learn More</a>
+          <a href="#contact" class="btn btn-outline-light">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <img src="logo.jpg" alt="Logo" class="img-fluid" />
+          </div>
+          <div class="col-md-8">
+            <h2>About Us</h2>
+            <p>
+              We are committed to empowering individuals and organizations
+              through cutting-edge digital solutions, skills development, and
+              impactful projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Our Services</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card services-card">
+              <div class="card-body">
+                <i class="bi bi-code-slash"></i>
+                <h5 class="mt-3">Digital Consultancy</h5>
+                <p>
+                  Providing expert guidance to transform your digital presence.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card services-card">
+              <div class="card-body">
+                <i class="bi bi-gear"></i>
+                <h5 class="mt-3">Tech Solutions</h5>
+                <p>Innovative tech solutions tailored to your needs.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card services-card">
+              <div class="card-body">
+                <i class="bi bi-mortarboard"></i>
+                <h5 class="mt-3">Skills Development</h5>
+                <p>Empowering individuals with essential digital skills.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card services-card">
+              <div class="card-body">
+                <i class="bi bi-people"></i>
+                <h5 class="mt-3">Community Projects</h5>
+                <p>
+                  Driving social impact through community-driven initiatives.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects and Impact Section -->
+    <section id="projects" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Projects and Impact</h2>
+        <div class="row">
+          <!-- Example Project -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="logo.jpg" class="card-img-top" alt="Project 1" />
+              <div class="card-body">
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-text">Description of Project 1.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="logo.jpg" class="card-img-top" alt="Project 2" />
+              <div class="card-body">
+                <h5 class="card-title">Project 2</h5>
+                <p class="card-text">Description of Project 2.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="logo.jpg" class="card-img-top" alt="Project 3" />
+              <div class="card-body">
+                <h5 class="card-title">Project 3</h5>
+                <p class="card-text">Description of Project 3.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meet Our Team Section -->
+    <section id="team" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Meet Our Team</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card team-card text-center">
+              <img
+                src="logo.jpg"
+                class="card-img-top mx-auto mt-3"
+                alt="Team Member"
+              />
+              <div class="card-body">
+                <h5 class="card-title">John Doe</h5>
+                <p class="card-text">Role</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card team-card text-center">
+              <img
+                src="logo.jpg"
+                class="card-img-top mx-auto mt-3"
+                alt="Team Member"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Jane Smith</h5>
+                <p class="card-text">Role</p>
+              </div>
+            </div>
+          </div>
+          <!-- Add more team members as needed -->
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
